@@ -1,0 +1,13 @@
+SELECT title,description FROM film;
+
+SELECT * FROM film;
+WHERE LENGHT > 60 AND LENGHT <75
+
+SELECT * FROM film ;
+WHERE RENTAL_RATE = 0.99 AND REPLACEMENT_COST=12.99 OR REPLACEMENT_COST=28.99
+
+SELECT last_name FROM customer;
+WHERE first_name ="Mary"
+
+SELECT * FROM film ;
+WHERE NOT(lenght>50) AND NOT(rental_rate=2.99 OR rental_rate=4.99)
