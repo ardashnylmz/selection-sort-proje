@@ -1,0 +1,12 @@
+SELECT DISTICT (replacement_cost) FROM film ;
+
+SELECT COUNT(DISTICT (replacement_cost)) FROM film ;
+
+SELECT COUNT(*) FROM film
+WHERE title LİKE "T%" AND rating ="G";
+
+SELECT COUNT(*) FROM country 
+WHERE country LİKE ("_____");
+
+SELECT COUNT(*) FROM city 
+WHERE ILİKE ("%r");
