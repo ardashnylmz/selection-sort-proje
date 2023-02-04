@@ -1,0 +1,15 @@
+SELECT * FROM film
+WHERE title LİKE "%n" 
+ORDER BY lenght DESC
+LİMİT 5 ;
+
+SELECT * FROM film 
+WHERE title LİKE"%n"
+ORDER BY lenght 
+OFFSET 5 
+LİMİT 5;
+
+SELECT * FROM customer 
+WHERE store_id = 1 
+ORDER BY last_name DESC 
+LİMİT 4 
