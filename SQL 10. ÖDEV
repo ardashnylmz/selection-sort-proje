@@ -1,0 +1,10 @@
+SELECT country,city FROM country
+LEFT JOİN city ON city.id=country.city_id;
+
+
+SELECT payment_id,first_name,last_name FROM customer
+RİGHT JOİN payment ON payment.id=customer.payment_id;
+
+
+SELECT rental_id,first_name,last_name FROM customer
+FULL JOİN rental ON rental.id=customer.rental_id;
