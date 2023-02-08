@@ -1,0 +1,10 @@
+SELECT city,country FROM city
+İNNER JOİN country ON city.country_id=country.id
+
+
+SELECT payment_id,first_name,last_name FROM customer 
+İNNER JOİN payment ON customer.payment_id=payment.id;
+
+
+SELECT rental_id,first_name,last_name FROM customer
+İNNER JOİN rental ON customer.rental_id=rental.id
