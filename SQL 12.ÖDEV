@@ -1,0 +1,29 @@
+SELECT COUNT(*)FROM FİLM
+WHERE LENGHT>
+(
+SELECT AVG(LENGHT)FROM FİLM 
+);
+
+
+
+SELECT COUNT(*) FROM FİLM
+WHERE rental_rate=
+(
+SELECT MAX(rental_rate) FROM FİLM
+);
+
+
+SELECT * FROM FİLM
+WHERE rental_rate =
+(
+SELECT MİN(rental_rate) AND MİN(replacement_cost) FROM FİLM
+)
+ORDER BY rental_rate,replacement_cost;
+
+
+SELECT * FROM CUSTOMER
+WHERE  num_purchases=
+(
+SELECT MAX(num_purchases) FROM CUSTOMER
+)
+ORDER BY num_purchases DESC;
